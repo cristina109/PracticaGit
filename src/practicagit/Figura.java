@@ -1,14 +1,13 @@
 
 package practicagit;
 
+enum Colores{
+naranja ,coral, verde;
+}
+
 abstract class Figura {
-    String color;
-    
-    public Figura(String color){
-        this.color=color;
-    }
-    
-    public float area(){
-        return 0;
-    }
+   public Colores color;
+   
+    public abstract double area();
+    public abstract double perimetro();
 }
